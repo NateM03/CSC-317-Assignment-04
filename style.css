@@ -38,9 +38,59 @@ header, section, aside, nav, footer {
 /* header and footer */
 
 header, footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+/* header content */
+header { /* Alligned the header to the center */
+  text-align: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background-color: orange;
+  color: purple;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+/* Section Headers */
+section h2{
+  font-size: 30px;
+  
+}
+
+section p {
+  font-size: 20px;
+}
+
+/* Top course Choices */
+aside h2 {
+  font-size: 30px;
+}
+aside p {
+  font-size: 20px;
+}
+/* navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+}
+nav a:hover {
+  background-color: purple;
+  color: white;
+}
 
