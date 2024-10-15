@@ -46,7 +46,12 @@ header, footer {
 
 /* WRITE YOUR CODE BELOW HERE */
 
-/* header content */
+html { /* Google font */
+  font-size: 0.990rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Header Content */
 header { /* Alligned the header to the center */
   text-align: center;
   display: flex; 
@@ -62,6 +67,8 @@ header h1 {
 }
 
 /* Section Headers */
+
+/* Brave New World header*/
 section h2{
   font-size: 30px;
   
@@ -71,24 +78,56 @@ section p {
   font-size: 20px;
 }
 
+section a { /* PNG image next to links */
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+  color: black;
+}
+
+section a:visited { /* After the link is visited, change the color */
+  color: purple;
+}
+
+section a:hover {
+  background-color: purple;
+  color: white;
+}
+
+section a::after { /* Add the external link image next to links */
+  content: '';
+  display: inline-block;
+  background-image: url('external-link-52.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
 /* Top course Choices */
 aside h2 {
   font-size: 30px;
 }
+
 aside p {
   font-size: 20px;
 }
-/* navigation */
+
+/* Navigation */
 nav ul {
   list-style-type: none;
   padding: 0;
 }
-nav a{
+
+nav a {
+  margin-top: 30px;
   display: block;
   text-decoration: none;
   color: black;
-  padding: 10px 20px;
+  font-size: 20px;
 }
+
 nav a:hover {
   background-color: purple;
   color: white;
